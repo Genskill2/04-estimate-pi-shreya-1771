@@ -39,5 +39,18 @@ int main(void) {
   }
 }
 
+float mc_pi(int x){
+  float c=0;
+  float s=0;
+  for(int i=0;i<=x;i++){
+  float x= frandom();
+  float y=frandom();
+    s=s+1;
+    if((x*x)+(y*y))<=((s*s)/4){
+      c=c+1;
+    }
+    return (4c/s);
+  }
+  
 
 
