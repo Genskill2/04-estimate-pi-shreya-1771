@@ -7,6 +7,7 @@ float wallis_pi(int);
 
 int main(void) {
   float pi;
+  int i= get_int("Value of i:" );
   for (int i=0; i<5; i++) {
     pi = wallis_pi(i);
     if (!(fabs(pi - M_PI) > 0.15)) {
