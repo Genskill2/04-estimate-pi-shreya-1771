@@ -6,7 +6,7 @@
 
 
 float wallis_pi(int x){
-  float ans=1.0:
+  float ans=1.0;
   for(int i=1;i<=x;i++){
     ans*=((4.0*i*i)/((4.0*i*i)-1));
  
