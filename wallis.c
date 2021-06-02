@@ -3,11 +3,20 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int);
+
+
+float wallis_pi(int x){
+  float ans=1.0:
+  for(int i=1;i<=x;i++){
+    ans*=((4.0*i*i)/((4.0*i*i)-1));
+ 
+  }
+  return 2.0*ans;
+}
 
 int main(void) {
   float pi;
-  int i= get_int("Value of i:" );
+  
   for (int i=0; i<5; i++) {
     pi = wallis_pi(i);
     if (!(fabs(pi - M_PI) > 0.15)) {
@@ -25,11 +34,4 @@ int main(void) {
   }
 }
 
-float wallis_pi(int x){
-  float ans=1:
-  for(int i=1;i<=x;i++){
-    ans*=((4*i*i)/((4*i*i)-1));
-    i++;
-  }
-  return ans;
-}
+
